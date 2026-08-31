@@ -14,7 +14,7 @@ from google import genai
 from google.genai import types
 
 # --- إعداد مفتاح الذكاء الاصطناعي ---
-ai_client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY", "AIzaSyDW6Z0LGRWJ8cvdxREW3ybpFtEeAqlWNWY"))# ⚠️ ضع مفتاحك هنا
+ai_client = genai.Client(api_key=os.environ.get("AIzaSyDW6Z0LGRWJ8cvdxREW3ybpFtEeAqlWNWY"))# ⚠️ ضع مفتاحك هنا
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///darbak.db'
